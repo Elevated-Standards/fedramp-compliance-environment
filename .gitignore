@@ -35,3 +35,47 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# OpenTofu/Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+.terraform.lock.hcl
+.tofu/
+*.tfout
+plan.out
+.terragrunt-cache/
+
+# Crash log files
+crash.log
+
+# Exclude all .tfvars files, which are likely to contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used for local settings
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Exclude CLI configuration files
+.terraformrc
+terraform.rc
+.tofurc
+tofu.rc
+
+# MacOS system files
+.DS_Store
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Log files
+*.log

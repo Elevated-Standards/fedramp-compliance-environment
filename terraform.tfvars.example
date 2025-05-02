@@ -1,0 +1,18 @@
+# General Configuration
+aws_region  = "us-east-1"
+environment = "prod"
+
+# Network Configuration
+vpc_cidr           = "10.0.0.0/16"
+availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
+
+# Backend Configuration - Uncomment and configure when setting up remote state
+# state_bucket_name = "your-fedramp-terraform-state"
+# state_lock_table  = "your-fedramp-terraform-locks"
+
+# ECS Configuration
+ecs_cluster_name         = "fedramp-ecs-cluster"
+instance_type            = "m5.large"
+instance_group_desired_size = 3
+instance_group_min_size     = 2
+instance_group_max_size     = 5
